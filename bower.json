@@ -1,0 +1,24 @@
+{
+  "name": "practran",
+  "version": "0.1.0",
+  "authors": [
+    "Ilker Goktug Ozturk <ilkergoktugozturk@gmail.com>"
+  ],
+  "description": "Fast keyworld translating by single click based on Google Translate",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs-text": "~2.0.12",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.15",
+    "mustache.js": "~0.8.2"
+  }
+}

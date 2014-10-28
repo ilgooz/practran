@@ -1,0 +1,56 @@
+#practran {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #B3B3B3;
+    font-family: Arial;
+    text-align: left;
+    z-index: 2147483648;
+}
+
+.practran-translation {
+    font-size: 40px;
+    padding: 20px 15px;
+}
+
+.practran-original {
+    color: #444;
+}
+
+.practran-table {
+    width: 100%
+}
+
+.practran-extended-title {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 15px;
+    font-style: italic;
+    font-size: 16px;
+    color: #444;
+}
+
+.practran-table tr {
+    margin: 7px 30px;
+    font-size: 13px;
+}
+
+.practran-extended-related {
+    color: #555;
+    width: 100%;
+}
+
+.practran-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.practran-table td {
+    padding: 6px
+}
+
+.practran-extended-alternative {
+    padding-left: 40px;
+    white-space: nowrap;
+    color: #B3B3B3;
+}
