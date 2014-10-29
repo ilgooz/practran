@@ -23,4 +23,6 @@ require.config({
     }
 });
 
-require(['dialog/dialog.ctrl'], function(DialogCtrl){});
+require([
+    'dialog/dialog.ctrl'
+], function(){});

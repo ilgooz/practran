@@ -17,6 +17,14 @@ define([
 
         render: function () {
             this.$el.html(Mustache.render(this.template, this.model.attributes));
+        },
+
+        show: function() {
+            this.$el.css('display', 'block');
+        },
+
+        hide: function() {
+            this.$el.css('display', 'none');
         }
     });
 

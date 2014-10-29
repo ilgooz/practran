@@ -13,6 +13,7 @@ define([
             var json = JSON.parse(data.replace(/,{2,}/g, ','));
             
             var data = {};
+            data.extended = [];
             
             try{
                 data.original = json[0][0][1];
@@ -20,16 +21,18 @@ define([
             } catch(e){
                 return fn(e);
             }
-            
-            data.extended = [];
 
             try {
                 json[1].forEach(function(v){
                     var e = {};
                     e.title = v[0];
+                    e.items = [];
                     v[2].forEach(function(c){
-                        e['alternative'] = c[0];
-                        e['related'] = $.trim(c[1].join(', '));
+                        var item = {
+                            alternative: c[0],
+                            related : $.trim(c[1].join(', '))
+                        };
+                        e.items.push(item);
                     });
                     data.extended.push(e)
                 })
