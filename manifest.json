@@ -2,7 +2,7 @@
   "name": "Practran",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "Fast keyworld translating by single click based on Google Translate",
+  "description": "Fast keyword translating by click based on Google Translate",
   "options_page": "options/options.html",
   "content_scripts": [{
     "js": [

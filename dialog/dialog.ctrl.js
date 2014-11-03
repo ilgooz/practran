@@ -23,39 +23,21 @@ define([
         });
     }
 
-    // long press trigger
-    var timer;
     var fresh = false;
-    $(document).mouseup(function(){
-        clearTimeout(timer);
-    }).mousedown(function(e){
-      if(!e.ctrlKey){
-        timer = setTimeout(function(){
-           var text = Keyword.Dedect();
-           if(text !== null && !/\s+/.test(text)) {
-               fresh = true;
-               process(text);
-           }
-        }, 180);
-      }
-    });
 
     // ctrl + click trigger
-    $(document).click(function(e) {
-      if(e.ctrlKey) {
-        var text = Keyword.Dedect();
-        if(text !== null) {
-            process(text);
+    $(document).on("click", function(e) {
+        if(e.ctrlKey) {
+            var text = Keyword.Dedect();
+            if(text !== null) {
+                process(text);
+            }
         }
-      }
     });
 
+    // close
     $(document).click(function(){
-        if(!fresh) {
             view.hide();
-        } else {
-            fresh = false;
-        }
     });
 
 });
